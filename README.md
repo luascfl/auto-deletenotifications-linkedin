@@ -58,7 +58,9 @@ javascript:(function(){if(!window.location.href.includes('/notifications/?filter
 
 ## Contributing
 
-This project is based on code by Ian Anderson Gray ([https://iag.me/socialmedia/how-to-bulk-delete-your-linkedin-notifications/](https://iag.me/socialmedia/how-to-bulk-delete-your-linkedin-notifications/)). To contribute changes, please refer to his original project.
+This project is based on code by Ian Anderson Gray ([https://iag.me/socialmedia/how-to-bulk-delete-your-linkedin-notifications/](https://iag.me/socialmedia/how-to-bulk-delete-your-linkedin-notifications/)). All credits goes to his blog.
+
+Contributions are welcomed.
 
 
 ## License
