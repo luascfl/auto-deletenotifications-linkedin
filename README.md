@@ -25,23 +25,23 @@ This project doesn't require any installation in the traditional sense.  Instead
     * **English:** Use the code from the `en_Bookmarklet (Select code and drag to bookmarks) Delete LinkedIn Notifications.js` file.
     * **Portuguese:** Use the code from the `pt_Bookmarklet (Selecione o código e arraste para a barra de favoritos) Deletar notificações LinkedIn.js` file.
 
-2. **Copy the Bookmarklet Code:** Select the entire JavaScript code from the chosen file and copy it to your clipboard.  For example, the English version is:
+2. **Select the Bookmarklet Code:** Select the entire JavaScript code from the chosen file. To select all, use CTRL+A. For example, the English version is:
 
 ```javascript
 javascript:(function(){if(!window.location.href.includes('/notifications/?filter=all%27)){window.location.href=%27https://www.linkedin.com/notifications/?filter=all%27;alert(%27Click the bookmarklet again after the page loads%27);return;}function addCheckboxes(){document.querySelectorAll(".nt-card-list article.nt-card").forEach(e=>{if(e.previousElementSibling&&"INPUT"===e.previousElementSibling.tagName&&"checkbox"===e.previousElementSibling.type)return;e.style.marginLeft="40px";let t=document.createElement("input");t.type="checkbox",t.style.opacity="1",t.style.marginRight="5px",t.style.pointerEvents="auto",t.style.width="20px",t.style.height="20px",t.style.marginLeft="10px",e.parentNode.insertBefore(t,e)})}function addControlButtons(){let e=document.querySelector(".artdeco-card.nt-pill-list.mb3");if(e){if(e.querySelector(%27button[onclick*="toggleSelectCheckboxes"], button[onclick*="deleteSelectedNotifications"]%27))return;let t=document.createElement("button");t.innerText="Select All",t.onclick=toggleSelectCheckboxes,t.className="artdeco-pill artdeco-pill--slate artdeco-pill--3 artdeco-pill--choice nt-pill";let n=document.createElement("button");n.innerText="Delete Notifications",n.onclick=deleteSelectedNotifications,n.className="artdeco-pill artdeco-pill--slate artdeco-pill--3 artdeco-pill--choice nt-pill",e.prepend(n,t)}}function toggleSelectCheckboxes(){let e=document.querySelectorAll(".nt-card-list input[type=%27checkbox%27]"),t=Array.from(e).every(e=>e.checked);e.forEach(e=>e.checked=!t)}function deleteSelectedNotifications(){Array.from(document.querySelectorAll(".nt-card-list article.nt-card")).forEach((e,t)=>{let n=e.previousElementSibling;n&&n.checked&&setTimeout(()=>{let t=e.querySelector(%27a[href="#trash-medium"]');t&&t.parentNode.parentNode.click()},500*t)})}addCheckboxes(),addControlButtons()})();
 ```
 
-3. **Create a Bookmark:** In your browser, create a new bookmark.
+3. Drag the code to your bookmark bar to create a new bookmarklet.
+* If you are on your desired bookmark folder with the code copied, paste it. 
 
-4. **Paste the Code:** In the URL field of the new bookmark, paste the JavaScript code you copied.
+4. **Give it a Name:** Give your bookmark a descriptive name (e.g., "Delete LinkedIn Notifications" or "Apagar Notificações LinkedIn").
 
-5. **Give it a Name:** Give your bookmark a descriptive name (e.g., "Delete LinkedIn Notifications" or "Apagar Notificações LinkedIn").
-
-## Usage Examples
+## Usage
 
 1. **Navigate to LinkedIn Notifications:** Go to your LinkedIn notifications page (`https://www.linkedin.com/notifications/?filter=all`).
 
 2. **Click the Bookmarklet:** Click the bookmarklet you created. A prompt may appear asking you to click again after the page loads. Click the bookmarklet again after a short wait. Checkboxes will appear next to each notification.
+* If you're not on (`https://www.linkedin.com/notifications/?filter=all`) the script will redirect you to the page.
 
 3. **Select Notifications:** Check the boxes next to the notifications you wish to delete.
 
