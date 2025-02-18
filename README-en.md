@@ -1,4 +1,5 @@
 # LinkedIn Notification Deleter Bookmarklet
+🇧🇷 [Leia em Português](README.md)
 
 This project provides a bookmarklet to efficiently delete LinkedIn notifications in bulk. This bookmarklet adds checkboxes to each notification, allowing for the selection and deletion of multiple notifications simultaneously.  This is a repackaged version of a bookmarklet originally created by Ian Anderson Gray.
 
